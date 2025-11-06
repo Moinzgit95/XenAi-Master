@@ -1,144 +1,116 @@
-# Xen.ai - AI-Powered Collaborative Code Editor
+🌐 Live Demo
+🚀 https://xenai-master.vercel.app
 
-Xen.ai is a modern, collaborative code editor platform that combines the power of artificial intelligence with real-time collaboration features. Built with Next.js and Firebase, it provides developers with an intuitive workspace for coding, pair programming, and project management.
+🚀 XenAI – AI Powered Code Reviewer Using LLM
+XenAI is an intelligent cloud-based code review and collaborative coding platform.
+It uses Large Language Models (LLMs) to analyze, review, optimize, and debug code just like a senior software engineer — in real time.
 
-## Features
+Designed for students, developers, and engineering teams, XenAI combines AI-assisted code review + live collaboration + GitHub integration inside a modern web IDE.
 
-### 🤖 AI-Powered Assistance
-- AI-assisted code suggestions and explanations (LangChain + Google Generative AI)
-- Context-aware prompts and analysis within the editor
-- Code generation and refactoring helpers
+🎯 Project Objective
+To develop a next-generation virtual code reviewer capable of:
 
-### 👥 Real-Time Collaboration
-- Multi-user editing workflows
-- Presence indicators and activity status
-- Shared workspaces and project boards
-- In-app notifications and toasts for collaboration events
+Understanding & reviewing code using LLMs
+Detecting bugs, vulnerabilities, and performance issues
+Suggesting optimized & clean code
+Explaining code logic and debugging steps
+Supporting real-time collaborative coding
+Integrating with GitHub for commits & workflow
+🧠 Key Features
+🤖 AI Code Review
+Code quality review using LLMs (LangChain + Gemini)
+Suggestions for performance, security & style
+Debugging assistance with explanation
+Auto-commenting & documentation generation
+👥 Real-Time Collaboration
+Multi-user live coding (like Google Docs + VSCode)
+Live cursor tracking & presence indicators
+Workspace invitations and team roles
+🔐 Authentication
+Firebase Auth (Google + Email)
+Protected routes & secure sessions
+🔧 Developer Tools
+VSCode-style Monaco Editor
+GitHub Login + Auto Commit
+File explorer & workspace management
+Theming (Dark/Light), modern UI animations
+🏗️ System Architecture
+Layer	Technology
+Frontend	Next.js 14, React, Tailwind, ShadCN
+AI Engine	LangChain + Google Gemini
+Authentication	Firebase Auth + GitHub OAuth
+Database	Firebase Firestore + Realtime DB
+Editor	Monaco Editor
+Version Control	GitHub API
+Hosting	Vercel / Firebase
+📂 Directory Structure
+XenAI/ ├── docs/ # Report, Certificates, Paper ├── src/ │ ├── app/ # Next.js pages & routing │ ├── components/ # UI components │ ├── context/ # App + Auth providers │ ├── hooks/ # Custom hooks │ ├── helpers/ # Helper functions │ ├── config/ # Firebase config │ ├── lib/ # Utility functions │ └── utils/ # Utility modules └── public/ # Static files
 
-### 🔐 Secure Authentication
-- Firebase Authentication (Email/Password, OAuth providers)
-- Session persistence with browser-local storage
-- Protected routes and role-based access patterns
-- Passwordless and provider-based flows (configurable)
+yaml Copy code
 
-### 💼 Workspace Management
-- Create public and private workspaces
-- Invite team members
-- Role-based access control
-- Project organization tools
-
-### 👤 User Profiles
-- Customizable user profiles
-- Activity tracking
-- Contribution statistics
-- Collaboration history
-
-### 🎨 UX & Editor
-- Monaco Editor with syntax highlighting and theming
-- Dark/light theme support via next-themes
-- Modern UI components (shadcn/ui, Radix primitives, Chakra UI)
-- Smooth animations with Framer Motion
-
-## Getting Started
-
-### Prerequisites
-- Node.js (v18 or higher)
-- npm or yarn package manager
-- Firebase project credentials
-
-### Installation
-
-1. Clone the repository
-```bash
-git clone https://github.com/yourusername/xenai.git
-cd xenai
-```
-
-2. Install dependencies
-```bash
+⚙️ Getting Started
+✅ Clone Repo
+git clone  https://github.com/Moinzgit95/XenAi-Master
+cd XenAi-Master
+✅ Install Dependencies
+bash
+Copy code
 npm install
-# or
-yarn install
-```
+✅ Environment Variables
+Create .env.local and add:
 
-3. Set up environment variables
-Create a `.env.local` file in the root directory and add your Firebase configuration:
-```env
-NEXT_PUBLIC_FIREBASE_API_KEY=your_api_key
-NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN=your_auth_domain
-NEXT_PUBLIC_FIREBASE_PROJECT_ID=your_project_id
-NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET=your_storage_bucket
-NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID=your_messaging_sender_id
-NEXT_PUBLIC_FIREBASE_APP_ID=your_app_id
-NEXT_PUBLIC_FIREBASE_MEASUREMENT_ID=your_measurement_id
-```
+env
+Copy code
+NEXT_PUBLIC_FIREBASE_API_KEY=YOUR_KEY
+NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN=
+NEXT_PUBLIC_FIREBASE_PROJECT_ID=
+NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET=
+NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID=
+NEXT_PUBLIC_FIREBASE_APP_ID=
+NEXT_PUBLIC_FIREBASE_DATABASE_URL=
 
-4. Start the development server
-```bash
+NEXT_PUBLIC_GOOGLE_AI_API_KEY=
+GITHUB_CLIENT_ID=
+GITHUB_CLIENT_SECRET=
+GITHUB_REDIRECT_URI=http://localhost:3000/api/github/callback
+Never commit .env.local — keep secrets private.
+
+▶️ Run App
+bash
+Copy code
 npm run dev
-# or
-yarn dev
-```
+Visit:
 
-5. Open [http://localhost:3000](http://localhost:3000) in your browser
+arduino
+Copy code
+http://localhost:3000
+🚀 Future Enhancements
+Feature	Status
+AI Copilot Autocomplete	Coming soon
+AI Bug Fix Automation	Planned
+VS Code Extension	Planned
+Voice-to-Code	Research
+Execution Sandbox	Future
+Multi-language Code Support	Python, C++, Java planned
+Cloud Workspace	Planned
 
-## Project Structure
+📎 Project Documents
+Located in /docs folder:
+Project Report ✅
+Research Paper ✅
+Certificates ✅
 
-```
-xenai/
-├── src/
-│   ├── app/               # Next.js App Router pages and layout
-│   ├── components/        # Reusable UI components
-│   ├── config/            # Configuration (e.g., Firebase)
-│   ├── context/           # React context providers
-│   ├── helpers/           # Helper functions
-│   ├── hooks/             # Custom React hooks
-│   ├── lib/               # Libraries and utils
-│   ├── registry/          # UI registry
-│   └── utils/             # Utility modules
-├── public/                 # Static assets
-├── next.config.mjs         # Next.js config with path aliases
-├── tailwind.config.mjs     # Tailwind CSS configuration
-└── package.json            # Project dependencies
-```
+👨‍💻 Team Members
+Name	Role
+Moin Ahmed : Lead Developer / Full Stack Engineer
+Syed Abdulla : Developer  / Full Stack Engineer
+Prathap Sharma : Developer
+Sumit Lalasingi	: Developer
+Guide	Faculty Mentor, CSE Dept
 
-## Technologies Used
+⭐ How to Support
+If you found this useful, please ⭐ the repo — it motivates us!
 
-- **Framework**: Next.js 14 (App Router), React 18
-- **Styling**: Tailwind CSS, tailwindcss-animate
-- **UI Components**: shadcn/ui (Radix primitives), Chakra UI, Ark UI
-- **Icons**: lucide-react, @heroicons/react, Geist font
-- **Theming**: next-themes (dark/light)
-- **State/Context**: React Context, hooks
-- **Authentication**: Firebase Auth
-- **Database**: Firebase Firestore + Realtime Database
-- **Editor**: Monaco Editor (@monaco-editor/react)
-- **AI/LLM**: LangChain, Google Generative AI SDK, LangGraph
-- **Networking**: Axios
-- **Animations**: Framer Motion
-- **Notifications**: react-hot-toast, sonner, react-toastify
-- **Email/Comms**: Nodemailer, EmailJS
-- **3D/Graphics**: OGL, Spline
-
-## Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request. For major changes, please open an issue first to discuss what you would like to change.
-
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## Support
-
-If you have any questions or need help with setup, please open an issue or contact our support team.
-
-## Acknowledgments
-
-- Thanks to all contributors who have helped shape XenAI
-- Special thanks to the open-source community for their invaluable tools and libraries
+📬 Contact
+Email: moinahmedz9513@gmail.com
+GitHub: @Moinzgit95
