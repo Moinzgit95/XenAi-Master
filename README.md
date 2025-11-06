@@ -84,7 +84,7 @@ Copy code
 ### ✅ Clone Repo
 
 ```bash
-git clone https://github.com/Syed70/XenAi-Master.git
+git clone https://github.com/Moinzgit95/XenAi-Master
 cd XenAi-Master
 ✅ Install Dependencies
 bash
@@ -136,8 +136,8 @@ Certificates ✅
 
 👨‍💻 Team Members
 Name	Role
-Syed Abdulla : Lead Developer / Full Stack Engineer
-Moin Ahmed : Developer
+Moin Ahmed : Lead Developer / Full Stack Engineer
+Syed Abdulla : Developer  / Full Stack Engineer
 Prathap Sharma : Developer
 Sumit Lalasingi	: Developer
 Guide	Faculty Mentor, CSE Dept
@@ -146,6 +146,6 @@ Guide	Faculty Mentor, CSE Dept
 If you found this useful, please ⭐ the repo — it motivates us!
 
 📬 Contact
-Email: syedabdulla442@gmail.com
-GitHub: @Syed70
+Email: moinahmedz9513@gmail.com
+GitHub: @Moinzgit95
 
