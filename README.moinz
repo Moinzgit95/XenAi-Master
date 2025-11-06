@@ -1,66 +1,150 @@
-#🌐 Live Demo
-🚀 https://xenai-master.vercel.app
+<!-- ──────────────────────────────────────────────── -->
+# 🚀 XenAI – AI Powered Code Reviewer Using LLM
+<!-- ──────────────────────────────────────────────── -->
 
-🚀 XenAI – AI Powered Code Reviewer Using LLM
-XenAI is an intelligent cloud-based code review and collaborative coding platform.
-It uses Large Language Models (LLMs) to analyze, review, optimize, and debug code just like a senior software engineer — in real time.
+![Next.js](https://img.shields.io/badge/Next.js-14-black?style=for-the-badge&logo=next.js)
+![Firebase](https://img.shields.io/badge/Firebase-Backend-orange?style=for-the-badge&logo=firebase)
+![LangChain](https://img.shields.io/badge/LangChain-AI-blue?style=for-the-badge)
+![Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-black?style=for-the-badge&logo=vercel)
+![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
+![Status](https://img.shields.io/badge/Status-Active-success?style=for-the-badge)
 
-Designed for students, developers, and engineering teams, XenAI combines AI-assisted code review + live collaboration + GitHub integration inside a modern web IDE.
+> **An intelligent, cloud-based code review and collaborative coding platform** powered by **Large Language Models (LLMs)**.  
+> XenAI analyzes, reviews, optimizes, and debugs code just like a senior software engineer — in real time.
 
-🎯 Project Objective
-To develop a next-generation virtual code reviewer capable of:
+Designed for students, developers, and engineering teams, XenAI combines  
+🧠 **AI-assisted code review** + 👥 **live collaboration** + 🔗 **GitHub integration** inside a modern web IDE.
 
-Understanding & reviewing code using LLMs
-Detecting bugs, vulnerabilities, and performance issues
-Suggesting optimized & clean code
-Explaining code logic and debugging steps
-Supporting real-time collaborative coding
-Integrating with GitHub for commits & workflow
-🧠 Key Features
-🤖 AI Code Review
-Code quality review using LLMs (LangChain + Gemini)
-Suggestions for performance, security & style
-Debugging assistance with explanation
-Auto-commenting & documentation generation
-👥 Real-Time Collaboration
-Multi-user live coding (like Google Docs + VSCode)
-Live cursor tracking & presence indicators
-Workspace invitations and team roles
-🔐 Authentication
-Firebase Auth (Google + Email)
-Protected routes & secure sessions
-🔧 Developer Tools
-VSCode-style Monaco Editor
-GitHub Login + Auto Commit
-File explorer & workspace management
-Theming (Dark/Light), modern UI animations
-🏗️ System Architecture
-Layer	Technology
-Frontend	Next.js 14, React, Tailwind, ShadCN
-AI Engine	LangChain + Google Gemini
-Authentication	Firebase Auth + GitHub OAuth
-Database	Firebase Firestore + Realtime DB
-Editor	Monaco Editor
-Version Control	GitHub API
-Hosting	Vercel / Firebase
-📂 Directory Structure
-XenAI/ ├── docs/ # Report, Certificates, Paper ├── src/ │ ├── app/ # Next.js pages & routing │ ├── components/ # UI components │ ├── context/ # App + Auth providers │ ├── hooks/ # Custom hooks │ ├── helpers/ # Helper functions │ ├── config/ # Firebase config │ ├── lib/ # Utility functions │ └── utils/ # Utility modules └── public/ # Static files
+---
 
-yaml Copy code
+## 🌐 Live Demo
+🔗 **[https://xenai-master.vercel.app](https://xenai-master.vercel.app)**
 
-⚙️ Getting Started
-✅ Clone Repo
-git clone  https://github.com/Moinzgit95/XenAi-Master
+---
+
+## 🧭 Table of Contents
+- [Project Objective](#-project-objective)
+- [Key Features](#-key-features)
+- [System Architecture](#-system-architecture)
+- [Directory Structure](#-directory-structure)
+- [Tech Stack](#-tech-stack)
+- [Getting Started](#️-getting-started)
+- [Environment Variables](#️-environment-variables)
+- [Future Enhancements](#-future-enhancements)
+- [Project Documents](#-project-documents)
+- [Team Members](#-team-members)
+- [How to Support](#-how-to-support)
+- [Contact](#-contact)
+- [License](#-license)
+
+---
+
+## 🎯 Project Objective
+
+To develop a next-generation **virtual code reviewer** capable of:
+
+- Understanding & reviewing code using LLMs  
+- Detecting bugs, vulnerabilities, and performance issues  
+- Suggesting optimized & clean code  
+- Explaining code logic and debugging steps  
+- Supporting real-time collaborative coding  
+- Integrating with GitHub for commits & workflow  
+
+---
+
+## 🧠 Key Features
+
+### 🤖 AI Code Review
+- Code quality review using **LangChain + Gemini**  
+- Suggestions for **performance, security & style**  
+- Debugging assistance with detailed explanations  
+- Auto-commenting & documentation generation  
+
+### 👥 Real-Time Collaboration
+- Multi-user live coding *(like Google Docs + VSCode)*  
+- Live cursor tracking & user presence indicators  
+- Workspace invitations and team role management  
+
+### 🔐 Authentication
+- Firebase Auth (Google + Email)  
+- Protected routes & secure sessions using JWT  
+
+### 🔧 Developer Tools
+- VSCode-style **Monaco Editor**  
+- GitHub Login + Auto Commit integration  
+- File explorer & workspace management  
+- Dark/Light themes, modern animations, and responsive design  
+
+---
+
+## 🏗️ System Architecture
+
+| Layer | Technology |
+|-------|-------------|
+| **Frontend** | Next.js 14, React, Tailwind, ShadCN |
+| **AI Engine** | LangChain + Google Gemini |
+| **Authentication** | Firebase Auth + GitHub OAuth |
+| **Database** | Firebase Firestore + Realtime DB |
+| **Editor** | Monaco Editor |
+| **Version Control** | GitHub API |
+| **Hosting** | Vercel / Firebase |
+
+---
+
+## 📂 Directory Structure
+
+```
+XenAI/
+├── docs/                     # Reports, Certificates, Papers
+├── src/
+│   ├── app/                  # Next.js App Router pages
+│   ├── components/           # UI components (Editor, Chat, Navbar)
+│   ├── context/              # Auth + App context providers
+│   ├── hooks/                # Custom React hooks
+│   ├── helpers/              # Helper functions
+│   ├── config/               # Firebase configuration
+│   ├── lib/                  # Utility and logic layer
+│   └── utils/                # Utility modules
+└── public/                   # Static assets (logos, icons, etc.)
+```
+
+---
+
+## ⚙️ Tech Stack
+
+| Category | Technology |
+|-----------|-------------|
+| **Frontend** | Next.js 14 (App Router), Tailwind CSS, ShadCN |
+| **Backend** | Node.js (API Routes) |
+| **AI/LLMs** | Google Gemini API, LangChain |
+| **Database** | Firebase Firestore, Realtime DB |
+| **Auth** | Firebase Auth, JWT, GitHub OAuth |
+| **Hosting** | Vercel, Firebase Hosting |
+| **Version Control** | Git + GitHub |
+
+---
+
+## 🛠️ Getting Started
+
+### ✅ Clone Repo
+```bash
+git clone https://github.com/Moinzgit95/XenAi-Master.git
 cd XenAi-Master
-✅ Install Dependencies
-bash
-Copy code
-npm install
-✅ Environment Variables
-Create .env.local and add:
+```
 
-env
-Copy code
+### ✅ Install Dependencies
+```bash
+npm install
+```
+
+### ✅ Configure Environment Variables
+Create a `.env.local` file in the project root and copy from `.env.example`.
+
+---
+
+## 🧩 Environment Variables
+
+```env
 NEXT_PUBLIC_FIREBASE_API_KEY=YOUR_KEY
 NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN=
 NEXT_PUBLIC_FIREBASE_PROJECT_ID=
@@ -73,44 +157,85 @@ NEXT_PUBLIC_GOOGLE_AI_API_KEY=
 GITHUB_CLIENT_ID=
 GITHUB_CLIENT_SECRET=
 GITHUB_REDIRECT_URI=http://localhost:3000/api/github/callback
-Never commit .env.local — keep secrets private.
+```
 
-▶️ Run App
-bash
-Copy code
+⚠️ **Important:** Never commit `.env.local` — keep secrets private!
+
+---
+
+### ▶️ Run App
+```bash
 npm run dev
+```
+
 Visit:
-
-arduino
-Copy code
+```
 http://localhost:3000
-🚀 Future Enhancements
-Feature	Status
-AI Copilot Autocomplete	Coming soon
-AI Bug Fix Automation	Planned
-VS Code Extension	Planned
-Voice-to-Code	Research
-Execution Sandbox	Future
-Multi-language Code Support	Python, C++, Java planned
-Cloud Workspace	Planned
+```
 
-📎 Project Documents
-Located in /docs folder:
-Project Report ✅
-Research Paper ✅
-Certificates ✅
+---
 
-👨‍💻 Team Members
-Name	Role
-Moin Ahmed : Lead Developer / Full Stack Engineer
-Syed Abdulla : Developer  / Full Stack Engineer
-Prathap Sharma : Developer
-Sumit Lalasingi	: Developer
-Guide	Faculty Mentor, CSE Dept
+## 🚀 Future Enhancements
 
-⭐ How to Support
-If you found this useful, please ⭐ the repo — it motivates us!
+| Feature | Status |
+|----------|---------|
+| AI Copilot Autocomplete | 🔜 Coming soon |
+| AI Bug Fix Automation | 🧩 Planned |
+| VS Code Extension | 🧠 Planned |
+| Voice-to-Code | 🔬 Research Stage |
+| Execution Sandbox | 🧱 Future |
+| Multi-language Support | 🐍 Python, C++, Java (Planned) |
+| Cloud Workspace | ☁️ Planned |
 
-📬 Contact
-Email: moinahmedz9513@gmail.com
-GitHub: @Moinzgit95
+---
+
+## 📎 Project Documents
+
+Located in `/docs` folder:
+- 🧾 **Project Report** ✅  
+- 🧠 **Research Paper** ✅  
+- 📜 **Certificates** ✅  
+
+---
+
+## 👨‍💻 Team Members
+
+| Name | Role |
+|------|------|
+| **Moin Ahmed** | Lead Developer / Full Stack Engineer |
+| **Syed Abdulla** | Developer / Full Stack Engineer |
+| **Prathap Sharma** | Developer |
+| **Sumit Lalasingi** | Developer |
+| **Guide** | Faculty Mentor, CSE Dept |
+
+---
+
+## 🧩 Contributing
+
+1. Fork the repository 🍴  
+2. Create a new branch → `feature/new-feature`  
+3. Commit your changes  
+4. Push to your branch  
+5. Open a Pull Request 🚀  
+
+---
+
+## ⭐ How to Support
+If you found this project useful, please **⭐ star the repo** — it motivates us to improve and build more!
+
+---
+
+## 📬 Contact
+
+📧 **Email:** [moinahmedz9513@gmail.com](mailto:moinahmedz9513@gmail.com)  
+💻 **GitHub:** [@Moinzgit95](https://github.com/Moinzgit95)
+
+---
+
+## 📜 License
+This project is licensed under the **MIT License**.  
+See the [LICENSE](LICENSE) file for more information.
+
+---
+
+✨ *Built with ❤️ using Next.js, Firebase, and Gemini Pro AI*
