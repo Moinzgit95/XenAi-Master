@@ -1,0 +1,295 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&display=swap');
+
+:root {
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+}
+
+html {
+  font-family: var(--font-sans);
+}
+
+code, pre, .monaco-editor, .monaco-editor .monaco-editor-background {
+  font-family: var(--font-mono) !important;
+}
+
+/* Improve scrollbars */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(100, 116, 139, 0.5);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(100, 116, 139, 0.8);
+}
+
+/* Improve button and input styles */
+button, input, textarea, select {
+  font-family: var(--font-sans);
+}
+
+/* Add subtle transitions */
+button, a {
+  transition: all 0.2s ease;
+}
+
+@layer utilities {
+  .animate-gradient-slow {
+    background-size: 200% 200%;
+    animation: gradient 15s ease infinite;
+  }
+
+  @keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 0 0% 3.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 3.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 3.9%;
+    --primary: 0 0% 9%;
+    --primary-foreground: 0 0% 98%;
+    --secondary: 0 0% 96.1%;
+    --secondary-foreground: 0 0% 9%;
+    --muted: 0 0% 96.1%;
+    --muted-foreground: 0 0% 45.1%;
+    --accent: 0 0% 96.1%;
+    --accent-foreground: 0 0% 9%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 0 0% 89.8%;
+    --input: 0 0% 89.8%;
+    --ring: 0 0% 3.9%;
+    --chart-1: 12 76% 61%;
+    --chart-2: 173 58% 39%;
+    --chart-3: 197 37% 24%;
+    --chart-4: 43 74% 66%;
+    --chart-5: 27 87% 67%;
+    --radius: 0.5rem;
+  }
+  .dark {
+    --background: 240 10% 4%;
+    --foreground: 0 0% 98%;
+    --card: 240 10% 4%;
+    --card-foreground: 0 0% 98%;
+    --popover: 240 10% 4%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 252 87% 67%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 240 5% 26%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 240 5% 26%;
+    --muted-foreground: 240 5% 65%;
+    --accent: 252 87% 67%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 240 5% 26%;
+    --input: 240 5% 26%;
+    --ring: 252 87% 67%;
+    --chart-1: 220 70% 50%;
+    --chart-2: 160 60% 45%;
+    --chart-3: 30 80% 55%;
+    --chart-4: 280 65% 60%;
+    --chart-5: 340 75% 55%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply text-foreground;
+    background-color: transparent !important;
+  }
+}
+
+@keyframes gradient-move {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  25% { background-position: 100% 50%; }
+  50% { background-position: 100% 100%; }
+  75% { background-position: 0% 100%; }
+  100% { background-position: 0% 50%; }
+}
+
+.animate-gradient {
+  background-size: 200% 200%;
+  animation: gradient-move 6s infinite linear;
+}
+
+@keyframes glow-x-left { 0% { background-position: 100% 0; } 100% { background-position: 0 0; } }
+@keyframes glow-x-right { 0% { background-position: 0 0; } 100% { background-position: 100% 0; } }
+@keyframes glow-y-up { 0% { background-position: 0 100%; } 100% { background-position: 0 0; } }
+@keyframes glow-y-down { 0% { background-position: 0 0; } 100% { background-position: 0 100%; } }
+
+.animate-glow-x-left { animation: glow-x-left 2.5s linear infinite; }
+.animate-glow-x-right { animation: glow-x-right 2.5s linear infinite; }
+.animate-glow-y-up { animation: glow-y-up 2.5s linear infinite; }
+.animate-glow-y-down { animation: glow-y-down 2.5s linear infinite; }
+
+@keyframes train-x-right { 0% { transform: translateX(0%);} 100% { transform: translateX(100%);} }
+@keyframes train-x-left { 0% { transform: translateX(0%);} 100% { transform: translateX(-100%);} }
+@keyframes train-y-down { 0% { transform: translateY(0%);} 100% { transform: translateY(100%);} }
+@keyframes train-y-up { 0% { transform: translateY(0%);} 100% { transform: translateY(-100%);} }
+
+.animate-train-x-right { animation: train-x-right 1.8s linear infinite; }
+.animate-train-x-left  { animation: train-x-left  1.8s linear infinite; }
+.animate-train-y-down  { animation: train-y-down  1.8s linear infinite; }
+.animate-train-y-up    { animation: train-y-up    1.8s linear infinite; }
+
+@keyframes visible-quarter {
+  0% { opacity: 1; }
+  24.99% { opacity: 1; }
+  25% { opacity: 0; }
+  100% { opacity: 0; }
+}
+.visible-q { animation: visible-quarter 7.2s linear infinite; }
+.q-delay-0 { animation-delay: 0s; }
+.q-delay-25 { animation-delay: 1.8s; }
+.q-delay-50 { animation-delay: 3.6s; }
+.q-delay-75 { animation-delay: 5.4s; }
+
+/* Single-runner clockwise perimeter animation (25% segment length) */
+@keyframes perimeter-cw {
+  0%   { top:0; left:0; right:auto; bottom:auto; width:25%; height:2px; }
+  24.99% { top:0; left:75%; right:auto; bottom:auto; width:25%; height:2px; }
+
+  25% { top:0; right:0; left:auto; bottom:auto; width:2px; height:25%; }
+  49.99% { top:75%; right:0; left:auto; bottom:auto; width:2px; height:25%; }
+
+  50% { bottom:0; left:0; right:auto; top:auto; width:25%; height:2px; }
+  74.99% { bottom:0; left:75%; right:auto; top:auto; width:25%; height:2px; }
+
+  75% { top:0; left:0; right:auto; bottom:auto; width:2px; height:25%; }
+  100% { top:75%; left:0; right:auto; bottom:auto; width:2px; height:25%; }
+}
+
+.runner-bar {
+  position: absolute;
+  pointer-events: none;
+  background: linear-gradient(90deg, rgba(168,85,247,0) 0%, rgba(168,85,247,0.9) 50%, rgba(168,85,247,0) 100%);
+  background-size: 200% 100%;
+  filter: drop-shadow(0 0 6px rgba(168,85,247,0.5));
+}
+.runner-a { animation: perimeter-cw 6s linear infinite; }
+.runner-b { animation: perimeter-cw 6s linear infinite; animation-delay: 3s; }
+
+/* TextAnimate: blurInUp */
+@keyframes ta-blur-in-up {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 8px, 0) scale(0.985);
+    filter: blur(5px);
+  }
+  70% {
+    opacity: 1;
+    filter: blur(1.5px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0) scale(1);
+    filter: blur(0);
+  }
+}
+
+.ta-blur-in-up {
+  animation: ta-blur-in-up 0.6s cubic-bezier(.22,.61,.36,1) forwards;
+}
+
+/* VS Code inspired workspace styles */
+.workspace-header {
+  height: 42px;
+  background-color: #000000;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.workspace-logo {
+  font-size: 1.25rem;
+  font-weight: 600;
+  background: linear-gradient(90deg, #6366f1, #a855f7, #ec4899);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-decoration: none;
+}
+
+.workspace-nav {
+  background-color: #1e1e1e;
+  border-right: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.workspace-button {
+  background-color: #2d2d2d;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+  padding: 0.5rem 1rem;
+  font-size: 0.875rem;
+  transition: all 0.2s ease;
+}
+
+.workspace-button:hover {
+  background-color: #3e3e3e;
+}
+
+.workspace-button-primary {
+  background: linear-gradient(90deg, #6366f1, #a855f7);
+  color: white;
+  border: none;
+}
+
+.workspace-button-primary:hover {
+  opacity: 0.9;
+}
+
+.ai-chat-button {
+  background: linear-gradient(90deg, #0ea5e9, #10b981);
+  border: none;
+  box-shadow: 0 4px 12px rgba(14, 165, 233, 0.3);
+  transition: all 0.3s ease;
+}
+
+.ai-chat-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(14, 165, 233, 0.4);
+}
+
